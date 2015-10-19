@@ -17,10 +17,4 @@ describe "NFL Teams" do
     expect(@json).to include(shortName)
   end
 
-  it 'JSON Objects' do
-    expect(@json).to_json have_json_path("codes")
-    expect(@json).to_json have_json_path("fullName")
-    expect(@json).to_json have_json_path("shortName")
-  end
-
 end
